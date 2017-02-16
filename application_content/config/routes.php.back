@@ -1,0 +1,76 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+/*
+| -------------------------------------------------------------------------
+| URI ROUTING
+| -------------------------------------------------------------------------
+| This file lets you re-map URI requests to specific controller functions.
+|
+| Typically there is a one-to-one relationship between a URL string
+| and its corresponding controller class/method. The segments in a
+| URL normally follow this pattern:
+|
+|	example.com/class/method/id/
+|
+| In some instances, however, you may want to remap this relationship
+| so that a different class/function is called than the one
+| corresponding to the URL.
+|
+| Please see the user guide for complete details:
+|
+|	http://codeigniter.com/user_guide/general/routing.html
+|
+| -------------------------------------------------------------------------
+| RESERVED ROUTES
+| -------------------------------------------------------------------------
+|
+| There area two reserved routes:
+|
+|	$route['default_controller'] = 'welcome';
+|
+| This route indicates which controller class should be loaded if the
+| URI contains no data. In the above example, the "welcome" class
+| would be loaded.
+|
+|	$route['404_override'] = 'errors/page_missing';
+|
+| This route will tell the Router what URI segments to use if those provided
+| in the URL cannot be matched to a valid route.
+|
+*/
+####LOGIN###############################
+$route['default_controller'] = "acceso";
+$route['(:any)'] = 'acceso';
+$route['cerrarSession'] = 'acceso/logout';
+$route['errorCsrf'] = 'acceso/errorCsrf';
+####END LOGIN############################
+
+$route['validarCct'] = 'acceso/validarCt';
+$route['buscarCts'] = 'acceso/searchCts';
+$route['obtenerFecha'] = 'acceso/getHora';
+$route['guardarEncuesta'] = 'acceso/savePoll';
+$route['exito'] = 'acceso/success';
+$route['loggin'] = 'acceso/iniciarSession';
+$route['captcha'] = 'acceso/verCaptcha';
+$route['iniciarSession'] = 'acceso/validarInicioSession';
+$route['cerrarSession'] = 'acceso/logout';
+$route['inicio'] = 'acceso/admin';
+$route['listadoEncuestas'] = 'acceso/loadDataGrid';
+$route['listaSubGrid'] = 'acceso/listadoDetail';
+$route['listadoSistema'] = 'acceso/loadDataGridSistema';
+$route['cambiarEstatusSistema'] = 'acceso/changeEstatusSistema';
+$route['gestionarFecha'] = 'acceso/updateFechaSistema';
+$route['listadoCiclos'] = 'acceso/loadDataGridCiclos';
+$route['cambiarEstatusCiclos'] = 'acceso/changeStatusCiclos';
+$route['guardarCiclos'] = 'acceso/saveCiclos';
+$route['listadoUsuarios'] = 'acceso/loadDataGridUsuarios';
+$route['cambiarEstatusUsuarios'] = 'acceso/changeStatusUsuarios';
+$route['guardarUsuarios'] = 'acceso/saveUsuarios';
+$route['getGrafica'] = 'acceso/getDataReporte';
+$route['getConcentrado'] = 'acceso/getDataConcentrado';
+$route['verReporte'] = 'acceso/loadReporte';
+$route['verEstadistica'] = 'acceso/loadEstadistica';
+$route['verConcentrado'] = 'acceso/loadConcentrado';
+$route['descargarReporteExcel'] = 'acceso/dowloadExcel';
+$route['404_override'] = '';
+/* End of file routes.php */
+/* Location: ./application/config/routes.php */
