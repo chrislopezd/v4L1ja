@@ -38,6 +38,6 @@ define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 
 define('MY_HASH',	'THISism164SHA1');
 define('CAPTCHA_HASH',	'C49o65idJU3wSAQ1');
-define('INDEXURL',	'/valija/');
+define('INDEXURL',	'/v4L1ja/');
 /* End of file constants.php */
 /* Location: ./application/config/constants.php */

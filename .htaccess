@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteBase /v4L1ja/
+RewriteCond $1 !^(index\.php|resources)
+RewriteRule ^(.*)$ index.php/$1 [L]

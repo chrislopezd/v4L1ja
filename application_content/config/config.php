@@ -15,7 +15,7 @@
 |
 */
 $config['base_url']	= '';//no mover!!!!!!!!!
-$config['base_folder'] = '/valija/';
+$config['base_folder'] = '/v4L1ja/';
 
 /*
 |--------------------------------------------------------------------------
